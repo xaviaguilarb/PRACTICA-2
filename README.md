@@ -26,3 +26,8 @@ El sistema és capaç de:
 - **Resistències:** 10kΩ per al LDR, 220Ω per al LED.
 
 ## 🔌 Esquema de Connexions
+ESP32 GPIO 34  <-->  Sortida del divisor LDR (LDR + R 10kΩ a GND i 3.3V)
+ESP32 GPIO 35  <-->  Pin Vout del sensor LM35
+ESP32 GPIO 2   <-->  Resistència 220Ω --> Ànode del LED
+ESP32 GND      <-->  Càtode LED, GND LM35, GND LDR
+ESP32 3.3V     <-->  VCC LM35 i VCC LDR
